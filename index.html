@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablets.css" />
+
+    <title>Budżet domowy</title>
+  </head>
+
+  <body>
+    <div class="background-image">
+      <div class="overlay"></div>
+      <div class="content">
+        <header class="container">
+          <i class="icon-look fa-solid fa-money-bill-transfer fa-2xl"></i>
+          <h1 class="app-name">Budżet</h1>
+        </header>
+        <main class="container">
+          <section class="result-tile">
+            <h2 id="yourBudget" class="tiles-name"></h2>
+          </section>
+          <section class="fill-tiles">
+            <section class="fill-tile">
+              <h2 class="tiles-name">Przychody</h2>
+              <form id="formInc" class="fill-area">
+                <input
+                  id="inputTextInc"
+                  class="text-input"
+                  type="text"
+                  placeholder="Nazwa przychodu"
+                  required />
+                <input
+                  id="inputAmountInc"
+                  class="amount-input"
+                  type="number"
+                  placeholder="Wartość"
+                  required
+                  min="0.01"
+                  step="0.01" />
+                <button class="amount-cto">Dodaj</button>
+              </form>
+              <div id="listWrapperInc" class="list-wrapper">
+                <ul id="listInc" class="list-ul"></ul>
+              </div>
+              <div class="total-wrapper">
+                <h2 class="total-name">
+                  Całkowity przychód:
+                  <span id="totalIncomes"></span>
+                </h2>
+              </div>
+            </section>
+            <section class="fill-tile">
+              <h2 class="tiles-name">Wydatki</h2>
+              <form id="formExp" class="fill-area">
+                <input
+                  id="inputTextExp"
+                  class="text-input"
+                  type="text"
+                  placeholder="Nazwa wydatku"
+                  required />
+                <input
+                  id="inputAmountExp"
+                  class="amount-input"
+                  type="number"
+                  placeholder="Wartość"
+                  required
+                  min="0.01"
+                  step="0.01" />
+                <button class="amount-cto">Dodaj</button>
+              </form>
+              <div id="listWrapperExp" class="list-wrapper">
+                <ul id="listExp" class="list-ul"></ul>
+              </div>
+              <div class="total-wrapper">
+                <h2 class="total-name">
+                  Suma wydatków:
+                  <span id="totalExpences"></span>
+                </h2>
+              </div>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1f54d8dbf.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+.background-image {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-image: url("./assets/bg-money.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-name {
+  color: white;
+  font-size: 50px;
+  margin: 40px 0px 25px 0px;
+}
+
+.result-tile {
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+  background-color: rgba(41, 41, 48, 0.8);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiles-name {
+  font-size: 25px;
+  margin: 20px;
+  color: hsl(0, 100%, 100%);
+}
+
+.fill-tiles {
+  height: auto;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fill-tile {
+  width: 400px;
+  height: 400px;
+  margin: 10px 10px;
+  background-color: rgba(41, 41, 48, 0.8);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fill-area {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.edit-form {
+  display: flex;
+  gap: 10px;
+}
+
+.text-input {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(20, 20, 25);
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+}
+.amount-input {
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(20, 20, 25);
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px;
+}
+input::placeholder {
+  opacity: 0.4;
+  color: gray;
+  padding: 3px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.amount-cto {
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(20, 20, 25);
+  border: 0px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: inset 5px 5px 8px rgba(83, 83, 84, 0.8),
+    inset -7px -7px 10px rgba(0, 0, 0, 0.8);
+}
+
+.amount-cto:hover {
+  transform: scale(1.05);
+}
+
+.list-wrapper {
+  width: 83%;
+  height: 320px;
+  margin-top: 20px;
+  border-top: 1px solid white;
+}
+
+.list-ul {
+  margin: 10px 0px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.item-cto {
+  width: 50px;
+  height: 25px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(20, 20, 25);
+  border: 0px;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: inset 3px 3px 5px rgba(83, 83, 84, 0.8),
+    inset -4px -4px 5px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+}
+
+.item-cto:hover {
+  transform: scale(1.05);
+}
+
+.total-wrapper {
+  width: 83%;
+  height: 70px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.total-name {
+  font-size: 20px;
+  color: hsl(0, 100%, 100%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 85%;
+  z-index: 100;
+}
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  z-index: 200;
+}
+.icon-look {
+  color: #ffffff;
+  margin-top: 50px;
+}
+.edit-input-name {
+  width: 140px;
+  height: 25px;
+}
+
+.edit-input-amount {
+  width: 70px;
+  height: 25px;
+}
